@@ -11,7 +11,7 @@ import urllib.request
 app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
-ANTHROPIC_KEY = "ANTHROPIC_KEY_HERE"
+ANTHROPIC_KEY = os.environ.get("ANTHROPIC_KEY", "")
 MODEL_PATH = "/tmp/pose_landmarker.task"
 
 def get_model():
