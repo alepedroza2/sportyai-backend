@@ -1,2 +1,2 @@
 [phases.setup]
-nixPkgs = ["libxcb", "xorg.libX11", "libGL", "glib"]
+aptPkgs = ["libxcb1", "libx11-6", "libgl1-mesa-glx", "libglib2.0-0"]
